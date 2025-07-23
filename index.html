@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>BYM HOME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #000; }
+    nav { position: fixed; top: 0; left: 0; width: 100%; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 10px 30px; }
+    .logo { font-weight: bold; font-size: 20px; color: #000; text-decoration: none; }
+    nav ul { display: flex; list-style: none; gap: 30px; }
+    nav a { text-decoration: none; color: #000; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: #888; }
+    header { display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f1f1f1; padding-top: 60px; }
+    header img { width: 600px; max-width: 100%; height: auto; }
+    section { padding: 60px 20px; }
+    .full-image { width: 100%; height: auto; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .gallery-item { position: relative; display: inline-block; text-decoration: none; color: white; }
+    .gallery-item img { width: 300px; max-width: 100%; height: auto; object-fit: cover; display: block; }
+    .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); opacity: 0; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: opacity 0.3s ease; }
+    .gallery-item:hover .overlay { opacity: 1; }
+    .text-block { max-width: 800px; margin: 0 auto 40px; text-align: center; font-size: 18px; }
+    .buy-buttons { display: flex; justify-content: center; gap: 40px; margin: 40px 0; flex-wrap: wrap; }
+    .buy-buttons a { padding: 20px 100px; border-radius: 12px; font-weight: 900; text-decoration: none; font-size: 32px; font-family: 'Inter', sans-serif; border: 1px solid; transition: 0.3s; display: block; }
+    .ozon { background: #fff; border: 1px solid rgba(0, 91, 255, 0.2); color: #005bff; }
+    .ozon:hover { background: #005bff; color: #fff; }
+    .wildberries { background: #fff; border: 1px solid rgba(210, 10, 137, 0.2); color: #d20a89; }
+    .wildberries:hover { background: #d20a89; color: #fff; }
+    .yandex { background: #fff; border: 1px solid rgba(255, 219, 77, 0.2); color: #000; }
+    .yandex:hover { background: #ffdb4d; color: #000; }
+    footer { padding: 40px 20px; background-color: #f1f1f1; text-align: center; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" class="logo">BYM HOME</a>
+    <ul>
+      <li><a href="#catalog">Каталог</a></li>
+      <li><a href="#buy">Где купить?</a></li>
+      <li><a href="#about">О компании</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+  <header>
+    <img src="https://via.placeholder.com/600x800?text=Main+Banner" alt="BYM HOME Главная баннер" />
+  </header>
+  <section id="catalog">
+    <div class="gallery">
+      <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+1" alt="Галерея 1" /><div class="overlay">Перейти в каталог</div></a>
+      <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+2" alt="Галерея 2" /><div class="overlay">Перейти в каталог</div></a>
+      <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+3" alt="Галерея 3" /><div class="overlay">Перейти в каталог</div></a>
+    </div>
+  </section>
+  <section>
+    <div class="text-block">
+      <p>BYM HOME — это тканевые шторы для ванной, которые сочетают эстетику, долговечность и комфорт. Каждая штора создается вручную с заботой о деталях.</p>
+    </div>
+    <img class="full-image" src="https://via.placeholder.com/1200x800?text=Text+Block+Image" alt="Инфо блок изображение" />
+  </section>
+  <section>
+    <div class="gallery">
+      <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+4" alt="Галерея 4" /><div class="overlay">Перейти в каталог</div></a>
+      <a href="#" class="gallery-item"><img src="https://via.placeholder.com/300x400?text=Item+5" alt="Галерея 5" /><div class="overlay">Перейти в каталог</div></a>
+    </div>
+  </section>
+  <section>
+    <img class="full-image" src="https://via.placeholder.com/1200x800?text=Final+Banner" alt="Финальное изображение" />
+  </section>
+  <section id="buy">
+    <div class="text-block">
+      <h2>Где купить?</h2>
+      <div class="buy-buttons">
+        <a href="https://www.ozon.ru/category/shtory-i-karnizy-dlya-vannoy-15015/bym-home-101109354/" class="ozon" target="_blank">OZON</a>
+        <a href="https://www.wildberries.ru/brands/11144210-bym-home" class="wildberries" target="_blank">WILDBERRIES</a>
+        <a href="https://market.yandex.ru/search?text=BYM%20HOME" class="yandex" target="_blank">Яндекс Маркет</a>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="text-block">
+      <h2>О компании</h2>
+      <p>BYM HOME — российский бренд, специализирующийся на текстиле для ванных комнат. Мы создаём стильные и функциональные решения, уделяя внимание качеству, экологичности и современному дизайну.</p>
+    </div>
+  </section>
+  <section id="contacts">
+    <div class="text-block">
+      <h2>Контакты</h2>
+      <p>Email: contact@bymhome.ru<br>Телефон: +7 (999) 123-45-67<br>Instagram: @bymhome</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 BYM HOME — Все права защищены.</p>
+  </footer>
+</body>
+</html>
